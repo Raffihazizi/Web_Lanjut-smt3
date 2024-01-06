@@ -1,0 +1,116 @@
+.main {
+    height: 100vh;
+}
+
+.sidebar {
+    background: black;
+    color: white;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 10px;
+}
+
+.sidebar a:hover {
+    background: grey;
+}
+
+.active {
+    background: rgb(2, 6, 66);
+    border-right: solid 5px red;
+}
+
+.card-data {
+    border: solid 1px;
+    padding: 20px 30px;
+}
+
+.card-data.book {
+    background-color: palevioletred;
+}
+
+.card-data.category {
+    background-color: teal;
+}
+
+.card-data.user {
+    background-color: cadetblue;
+}
+
+.card-data i {
+    font-size: 60px;
+}
+
+.card-desc {
+    font-size: 30px;
+}
+
+.card-count {
+    font-size: 30px;
+}
+
+/* batadasdasd */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-table-container {
+    margin-bottom: 20px;
+}
+
+.profile-table {
+    width: 75%;
+    border-collapse: collapse;
+}
+
+.profile-picture {
+    vertical-align: top;
+    padding-right: 10px;
+}
+
+.profile-image {
+    width: 100%;
+    max-height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.profile-label {
+    font-weight: bold;
+    padding-right: 5px;
+
+}
+
+.profile-info {
+    color: black;
+}
+
+.profile-description {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+
+/* admin */
+
