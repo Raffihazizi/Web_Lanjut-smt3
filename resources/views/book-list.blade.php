@@ -1,6 +1,6 @@
 @extends('layouts.mainlayout')
 
-@section('title','Dashboard')
+@section('title','Daftar Buku')
 
 @section('page-name','dashboard')
 

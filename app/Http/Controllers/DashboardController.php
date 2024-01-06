@@ -18,5 +18,8 @@ class DashboardController extends Controller
         return view('dashboard',['book_count' => $bookCount,'categoty_count' => $categoryCount,
         'user_count' => $userCount]);
     }
-    
+    public function profile()
+    {
+        return view('profile-admin');
+    }
 }

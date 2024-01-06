@@ -37,8 +37,7 @@ Route::middleware('auth')->group(function () {
 
     Route::middleware('only_admin')->group(function () {
         Route::get('dashboard', [DashboardController::class, 'index']);
-
-
+        Route::get('profile-admin', [DashboardController::class, 'profile']);
 
         Route::get('books', [BookController::class, 'index']);
         Route::get('book-add', [BookController::class, 'add']);
@@ -75,6 +74,8 @@ Route::middleware('auth')->group(function () {
         Route::get('rent-logs', [RentLogController::class, 'index']);
 
         Route::get('book-return', [BookRentController::class,'returnBook']);
+
+
 
 
     });

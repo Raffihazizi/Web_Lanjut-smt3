@@ -39,6 +39,9 @@
 .card-data.user {
     background-color: cadetblue;
 }
+.card-data.coba {
+    background-color: white;
+}
 
 .card-data i {
     font-size: 60px;
@@ -112,5 +115,5 @@ body {
 }
 
 
-/* admin */
+
 

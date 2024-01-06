@@ -10,24 +10,51 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
 
+{{-- <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                    <a class="navbar-brand" href="dashboard" ><i class="bi bi-house-fill"></i>Rental Buku</a>
+                    <a href="#" class="nav"></a>
+                    <a class="navbar-brand" href="/logout"><i class="bi bi-box-arrow-in-left"></i>Logout</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
 
+            </div>
+        </nav> --}}
 
 <body>
 
     <div class="main d-flex flex-column justify-content-between">
-        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="dashboard" ><i class="bi bi-house-fill"></i>Rental Buku</a>
-                 <a class="navbar-brand" href="/logout"><i class="bi bi-box-arrow-in-left"></i>Logout</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="dashboard"><i class="bi bi-house"></i>Rental Buku</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                   <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                           <li class="nav-item">
+                                <a class="nav-link" href="profile-admin">
+                                    <i class="bi bi-person-square"></i> Profile Admin
+                                </a>
+                            </li>
+                           <li class="nav-item">
+                                <a class="nav-link" href="https://www.instagram.com/mithasyt?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                                    <i class="bi bi-instagram"></i> Instagram
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.youtube.com/@raffihazizi4314/videos">
+                                    <i class="bi bi-youtube"></i> YouTube
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="navbar-brand" href="/logout"><i class="bi bi-box-arrow-in-left"></i>Logout</a>
         </nav>
 
         <div class="body-content h-100">
             <div class="row g-0 h-100">
                 <div class="sidebar col-lg-2 collapse d-lg-block" id="navbarTogglerDemo03">
+
                     @if (Auth::user())
                             @if (Auth::user()->role_id == 1)
                                 <a href="/dashboard"     @if (request()->route()->uri == 'dashboard') class="active" @endif><i class="bi bi-person-video"></i>DASHBOARD</a>
@@ -44,6 +71,7 @@
                             @endif
                         @else
                          <a href="/login">Login</a>
+
                     @endif
                 </div>
                 <div class="content p-5 col-lg-10">
@@ -52,6 +80,8 @@
             </div>
         </div>
     </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
